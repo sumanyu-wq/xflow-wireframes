@@ -1,0 +1,2073 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Skydo vs Wise 2026: Full Comparison for Indian Businesses | Xflow</title>
+<meta name="description" content="Unbiased comparison of Skydo, Wise and Xflow for Indian businesses receiving international payments. See fees, FX rates, compliance and settlement speed."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+<style>
+/* ─────────────────────────────────────────
+   DESIGN TOKENS  (extracted from xflowpay.com)
+   ───────────────────────────────────────── */
+:root {
+  /* Brand colours */
+  --ink:        #12141D; /* near-black, headlines */
+  --navy:       #1F2741; /* body text */
+  --navy-mid:   #2D3C83; /* dark accent */
+  --accent:     #5E76E3; /* interactive accent */
+  --muted:      #4D5578; /* secondary text */
+  --subtle:     #A9B1D0; /* captions, borders */
+  --lavender:   #E7EBF8; /* tinted background */
+  --surface:    #F8F9FD; /* card surface */
+  --white:      #FEFEFE; /* page background */
+  --border:     #CCD2E9; /* dividers */
+
+  /* Semantic states */
+  --green:      #059669;
+  --green-bg:   #ECFDF5;
+  --green-bd:   #A7F3D0;
+  --red:        #DC2626;
+  --red-bg:     #FEF2F2;
+  --amber:      #B45309;
+  --amber-bg:   #FFFBEB;
+
+  /* Typography */
+  --font:       'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  /* Spacing scale */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+  --space-24: 96px;
+
+  /* Radii */
+  --r-sm:  6px;
+  --r-md:  10px;
+  --r-lg:  16px;
+  --r-xl:  24px;
+  --r-pill: 100px;
+
+  /* Shadows */
+  --shadow-xs: 0 1px 2px rgba(31,39,65,.06);
+  --shadow-sm: 0 2px 8px rgba(31,39,65,.08);
+  --shadow-md: 0 8px 24px rgba(31,39,65,.10);
+  --shadow-lg: 0 16px 48px rgba(31,39,65,.14);
+}
+
+/* ─── RESET ─── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; font-size: 16px; }
+body { font-family: var(--font); color: var(--navy); background: var(--white); -webkit-font-smoothing: antialiased; line-height: 1.6; }
+img { max-width: 100%; display: block; }
+a { color: inherit; }
+button { font-family: inherit; }
+
+/* ─── LAYOUT ─── */
+.container { max-width: 1080px; margin: 0 auto; padding: 0 var(--space-8); }
+.section-gap { padding: var(--space-20) 0; }
+.section-gap-lg { padding: var(--space-24) 0; }
+
+/* ─── TYPE SCALE ─── */
+.label {
+  font-size: 11px; font-weight: 600; letter-spacing: .08em;
+  text-transform: uppercase; color: var(--accent);
+}
+.h1 { font-size: clamp(42px,5.5vw,68px); font-weight: 800; line-height: 1.05; letter-spacing: -2px; color: var(--white); }
+.h2 { font-size: clamp(28px,3.5vw,44px); font-weight: 700; line-height: 1.12; letter-spacing: -1px; color: var(--ink); }
+.h3 { font-size: 20px; font-weight: 600; line-height: 1.3; color: var(--ink); }
+.body-lg { font-size: 17px; line-height: 1.7; color: var(--muted); }
+.body-sm { font-size: 14px; line-height: 1.65; color: var(--muted); }
+.caption { font-size: 12px; color: var(--subtle); }
+
+/* ─── BUTTONS ─── */
+.btn {
+  display: inline-flex; align-items: center; gap: var(--space-2);
+  font-size: 15px; font-weight: 500; font-family: var(--font);
+  border-radius: var(--r-md); padding: 11px 22px;
+  cursor: pointer; border: none; text-decoration: none;
+  transition: opacity .15s, transform .12s;
+}
+.btn:hover { opacity: .88; transform: translateY(-1px); }
+.btn:active { transform: translateY(0); }
+.btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+.btn-dark  { background: var(--ink); color: var(--surface); }
+.btn-light { background: #fff; color: var(--ink); }
+.btn-outline {
+  background: transparent; color: rgba(255,255,255,.85);
+  border: 1.5px solid rgba(255,255,255,.25);
+}
+.btn-outline:hover { border-color: rgba(255,255,255,.5); opacity: 1; }
+
+/* ─── NAV ─── */
+.nav {
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(254,254,254,.9); backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--border);
+  height: 60px;
+}
+.nav-inner {
+  height: 100%;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.nav-logo {
+  display: flex; align-items: center; gap: var(--space-2);
+  font-size: 18px; font-weight: 600; color: var(--ink);
+  text-decoration: none;
+}
+.nav-logo-icon {
+  width: 28px; height: 28px;
+  background: var(--ink); border-radius: 6px;
+  display: flex; align-items: center; justify-content: center;
+  color: white; font-size: 13px; font-weight: 700;
+}
+.nav-links {
+  display: flex; align-items: center; gap: var(--space-8);
+}
+.nav-links a {
+  font-size: 14px; font-weight: 400; color: var(--muted);
+  text-decoration: none; transition: color .15s;
+}
+.nav-links a:hover { color: var(--ink); }
+.nav-actions { display: flex; align-items: center; gap: var(--space-3); }
+
+/* ─── HERO ─── */
+.hero {
+  background: linear-gradient(155deg, #0E1428 0%, #1A2347 55%, #0B0F1F 100%);
+  padding: var(--space-16) 0 var(--space-12);
+  position: relative; overflow: hidden;
+}
+/* Subtle radial glow - ambient, not distracting */
+.hero::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: radial-gradient(ellipse 60% 50% at 70% 40%, rgba(94,118,227,.12) 0%, transparent 70%);
+  pointer-events: none;
+}
+.hero-inner {
+  display: grid; grid-template-columns: 1fr 400px;
+  gap: var(--space-16); align-items: center;
+  position: relative; z-index: 1;
+}
+.hero-eyebrow {
+  display: inline-flex; align-items: center; gap: var(--space-2);
+  font-size: 12px; font-weight: 500; color: rgba(255,255,255,.5);
+  letter-spacing: .06em; text-transform: uppercase;
+  margin-bottom: var(--space-5);
+}
+.hero-eyebrow .live-dot {
+  width: 6px; height: 6px; border-radius: 50%; background: #4ADE80;
+  animation: blink 2s ease-in-out infinite;
+}
+@keyframes blink { 0%,100%{opacity:1} 50%{opacity:.3} }
+
+.hero .h1 { margin-bottom: var(--space-3); }
+.hero-verdict {
+  font-size: clamp(18px,2.2vw,24px); font-weight: 300; line-height: 1.4;
+  color: rgba(255,255,255,.75); margin-bottom: var(--space-8);
+  letter-spacing: -.3px;
+}
+.hero-verdict strong { color: #fff; font-weight: 500; }
+.hero-ctas { display: flex; gap: var(--space-3); flex-wrap: wrap; margin-bottom: var(--space-10); }
+.hero-stats {
+  display: flex; gap: var(--space-8);
+  padding-top: var(--space-8); border-top: 1px solid rgba(255,255,255,.1);
+}
+.stat-num { font-size: 24px; font-weight: 600; color: #fff; display: block; letter-spacing: -.5px; }
+.stat-lbl { font-size: 12px; color: rgba(255,255,255,.45); }
+
+/* ─── FX CALCULATOR CARD ─── */
+.calc-card {
+  background: var(--white); border-radius: var(--r-xl);
+  padding: var(--space-6);
+  box-shadow: 0 32px 80px rgba(0,0,0,.3), 0 0 0 1px rgba(255,255,255,.05);
+}
+.calc-card-title { font-size: 14px; font-weight: 600; color: var(--ink); margin-bottom: var(--space-5); }
+.calc-field-label {
+  font-size: 11px; font-weight: 600; letter-spacing: .07em;
+  text-transform: uppercase; color: var(--subtle); margin-bottom: var(--space-2);
+}
+.calc-field {
+  position: relative; margin-bottom: var(--space-5);
+}
+.calc-field input {
+  width: 100%; padding: 12px 14px 12px 26px;
+  border: 1.5px solid var(--border); border-radius: var(--r-md);
+  font-size: 20px; font-weight: 500; color: var(--ink);
+  font-family: var(--font); outline: none; transition: border-color .15s;
+  background: var(--white);
+}
+.calc-field input:focus { border-color: var(--accent); }
+.calc-field .prefix {
+  position: absolute; left: 10px; top: 50%; transform: translateY(-50%);
+  font-size: 16px; color: var(--subtle); pointer-events: none;
+}
+.rate-label {
+  font-size: 11px; font-weight: 600; letter-spacing: .07em;
+  text-transform: uppercase; color: var(--subtle); margin-bottom: var(--space-3);
+}
+.rate-list { display: flex; flex-direction: column; gap: var(--space-2); }
+.rate-item {
+  display: flex; align-items: center; gap: var(--space-3);
+  padding: 10px 12px; border-radius: var(--r-md);
+  border: 1.5px solid transparent;
+}
+.rate-item.first  { background: var(--green-bg); border-color: var(--green-bd); }
+.rate-item.others { background: var(--surface); }
+.rate-item.last   { background: var(--surface); }
+.rate-avatar {
+  width: 30px; height: 30px; border-radius: 7px; flex-shrink: 0;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 11px; font-weight: 700;
+}
+.avatar-x  { background: var(--ink); color: #fff; }
+.avatar-sk { background: var(--lavender); color: var(--navy-mid); }
+.avatar-w  { background: #DCF5E9; color: #166534; }
+.avatar-b  { background: var(--surface); color: var(--muted); border: 1px solid var(--border); font-size: 14px; }
+.rate-info { flex: 1; min-width: 0; }
+.rate-name  { font-size: 13px; font-weight: 600; color: var(--ink); }
+.rate-sub   { font-size: 11px; color: var(--subtle); }
+.rate-amount { text-align: right; }
+.rate-inr   { font-size: 14px; font-weight: 700; }
+.first .rate-inr  { color: var(--green); }
+.others .rate-inr { color: var(--navy); }
+.last .rate-inr   { color: var(--navy); }
+.rate-rate  { font-size: 11px; color: var(--subtle); }
+.winner-pill {
+  font-size: 10px; font-weight: 700; color: var(--green);
+  background: var(--green-bg); border-radius: var(--r-sm);
+  padding: 2px 6px; flex-shrink: 0;
+}
+/* Direction icon inside rate rows */
+.rate-dir {
+  font-size: 12px; font-weight: 700; flex-shrink: 0; line-height: 1;
+}
+.rate-dir.up   { color: var(--green); }
+.rate-dir.down { color: var(--subtle); }
+/* "Others" mini subheading divider */
+.rate-others-label {
+  list-style: none;
+  font-size: 10px; font-weight: 600; letter-spacing: .07em;
+  text-transform: uppercase; color: var(--subtle);
+  padding: 4px 2px 2px;
+  margin-top: 2px;
+}
+.calc-note { font-size: 11px; color: var(--subtle); text-align: center; margin-top: var(--space-4); line-height: 1.5; }
+
+/* ─── SECTION HEADERS ─── */
+.section-hd { margin-bottom: var(--space-10); }
+.section-hd .label { display: block; margin-bottom: var(--space-3); }
+.section-hd .h2 { margin-bottom: var(--space-3); }
+
+/* ─── PAIN POINTS ─── */
+.pain-section {
+  background: var(--lavender);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  padding: var(--space-12) 0;
+}
+.pain-section .section-hd { margin-bottom: var(--space-8); }
+.pain-row {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: var(--space-3);
+}
+.pain-card {
+  background: var(--white); border-radius: var(--r-lg);
+  padding: var(--space-5) var(--space-5);
+  border: 1px solid var(--border);
+  display: flex; flex-direction: column; gap: var(--space-3);
+}
+.pain-icon { font-size: 22px; line-height: 1; }
+.pain-title { font-size: 14px; font-weight: 700; color: var(--ink); line-height: 1.3; }
+.pain-body  { font-size: 13px; color: var(--muted); line-height: 1.6; flex: 1; }
+@media (max-width: 860px) {
+  .pain-row { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 560px) {
+  .pain-row { grid-template-columns: 1fr 1fr; }
+}
+
+/* ─── PLATFORM SUMMARY CARDS ─── */
+.plat-row {
+  display: grid; grid-template-columns: 1fr 1fr 1fr;
+  gap: var(--space-4); margin-bottom: var(--space-10);
+}
+.plat-card {
+  border-radius: var(--r-lg); padding: var(--space-6);
+  border: 1.5px solid var(--border);
+  background: var(--white);
+  display: flex; flex-direction: column; gap: var(--space-2);
+}
+.plat-card.winner {
+  background: var(--ink); border-color: var(--ink);
+  color: #fff;
+}
+.plat-tag {
+  font-size: 10px; font-weight: 700; letter-spacing: .08em;
+  text-transform: uppercase; color: var(--subtle);
+  margin-bottom: var(--space-1);
+}
+.plat-card.winner .plat-tag { color: rgba(255,255,255,.45); }
+.plat-stars { font-size: 18px; letter-spacing: 2px; margin-bottom: var(--space-1); }
+.plat-card:not(.winner) .plat-stars { color: var(--ink); }
+.plat-card.winner .plat-stars { color: #fff; }
+.plat-headline {
+  font-size: 16px; font-weight: 700; line-height: 1.25;
+  color: var(--ink); margin-bottom: var(--space-1);
+}
+.plat-card.winner .plat-headline { color: #fff; }
+.plat-body {
+  font-size: 13px; color: var(--muted); line-height: 1.6; flex: 1;
+}
+.plat-card.winner .plat-body { color: rgba(255,255,255,.65); }
+.plat-limit {
+  font-size: 12px; color: var(--red); background: var(--red-bg);
+  border-radius: var(--r-sm); padding: 5px 10px; margin-top: var(--space-2);
+}
+@media (max-width: 768px) {
+  .plat-row { grid-template-columns: 1fr; }
+}
+
+/* ─── COMPARISON TABLE ─── */
+.table-section { background: var(--white); }
+.table-wrap { border: 1px solid var(--border); border-radius: var(--r-lg); overflow: hidden; }
+
+/* Platform summary — inline first row */
+.plat-summary-row td {
+  padding: var(--space-6) 16px var(--space-5);
+  vertical-align: top;
+  border-bottom: 2px solid var(--border);
+  background: var(--white);
+}
+.plat-summary-row td.col-xf { background: rgba(231,235,248,.35); }
+.plat-summary-row td:first-child {
+  font-size: 11px; font-weight: 700; letter-spacing: .07em;
+  text-transform: uppercase; color: var(--subtle); padding-top: var(--space-7);
+}
+.ps-stars { font-size: 15px; letter-spacing: 2px; color: var(--ink); margin-bottom: var(--space-2); }
+.ps-headline { font-size: 14px; font-weight: 700; color: var(--ink); line-height: 1.3; margin-bottom: var(--space-2); }
+.ps-body { font-size: 12px; color: var(--muted); line-height: 1.6; margin-bottom: var(--space-3); }
+.ps-tag {
+  display: inline-block; font-size: 11px; font-weight: 600;
+  border-radius: var(--r-sm); padding: 3px 8px; line-height: 1.4;
+}
+.ps-tag.ps-warn   { color: var(--red);   background: var(--red-bg); }
+.ps-tag.ps-good   { color: var(--green); background: var(--green-bg); }
+table { width: 100%; border-collapse: collapse; min-width: 640px; table-layout: fixed; }
+.col-feat { width: 34%; }
+.col-sk   { width: 20%; }
+.col-wi   { width: 20%; }
+.col-xf   { width: 26%; }
+
+thead tr { background: var(--surface); }
+thead th {
+  padding: 14px 16px; text-align: left;
+  font-size: 12px; font-weight: 600; color: var(--muted);
+  letter-spacing: .04em; text-transform: uppercase;
+  border-bottom: 1px solid var(--border);
+  position: sticky; top: 60px; z-index: 5; background: var(--surface);
+}
+thead th.col-xf {
+  background: var(--lavender); color: var(--navy-mid);
+  position: sticky; top: 60px;
+}
+.thead-meta { font-size: 11px; font-weight: 400; color: var(--subtle); display: block; margin-top: 1px; letter-spacing: 0; text-transform: none; }
+
+/* Category rows */
+.cat-row td {
+  padding: 10px 16px;
+  font-size: 11px; font-weight: 700; color: var(--muted);
+  letter-spacing: .07em; text-transform: uppercase;
+  background: var(--surface); border-top: 1px solid var(--border);
+}
+.cat-row td.col-xf-cat { background: var(--lavender); }
+
+/* Data rows */
+tbody tr { border-bottom: 1px solid rgba(204,210,233,.5); }
+tbody tr:hover { background: #FBFBFE; }
+tbody tr:last-child { border-bottom: none; }
+tbody td { padding: 14px 16px; font-size: 14px; color: var(--navy); vertical-align: top; }
+tbody td:first-child { color: var(--ink); font-weight: 500; }
+tbody td.col-xf { background: rgba(231,235,248,.35); }
+
+.c-y { color: var(--green); font-weight: 600; }
+.c-n { color: var(--red); }
+.c-p { color: var(--amber); }
+.cell-text { font-size: 13px; color: var(--muted); line-height: 1.5; }
+
+/* Show-more row */
+.show-more-row td {
+  text-align: center; padding: 12px;
+  background: var(--surface); border-top: 1px solid var(--border);
+}
+.show-more-btn {
+  font-size: 13px; font-weight: 500; color: var(--accent);
+  background: none; border: none; cursor: pointer; padding: 4px 8px;
+  border-radius: var(--r-sm); transition: background .15s;
+}
+.show-more-btn:hover { background: var(--lavender); }
+.hidden-row { display: none; }
+.hidden-row.visible { display: table-row; }
+
+.table-scroll-wrap { overflow-x: auto; }
+
+/* ─── FEE CALCULATOR ─── */
+.fee-section { background: var(--ink); }
+.fee-section .label { color: rgba(255,255,255,.4); }
+.fee-section .h2 { color: var(--white); }
+
+/* Two separate cards side by side */
+.fee-inner {
+  display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-4); align-items: start;
+}
+/* Left card: table */
+.fee-inner > div:first-child {
+  background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.1);
+  border-radius: 20px; padding: var(--space-8);
+}
+/* Right card: slider */
+.fee-inner > div:last-child {
+  background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.1);
+  border-radius: 20px; overflow: hidden;
+  display: flex; flex-direction: column;
+}
+
+/* Slider card — transparent inside right card */
+.fee-slider-card {
+  background: none; border: none; border-radius: 0;
+  padding: var(--space-6); flex: 1;
+}
+.fee-amount-row {
+  display: flex; justify-content: space-between; align-items: center;
+  margin-bottom: var(--space-4);
+}
+.fee-amount-label { font-size: 14px; font-weight: 600; color: rgba(255,255,255,.55); }
+.fee-amount-val { font-size: 16px; font-weight: 700; color: #fff; letter-spacing: -.3px; }
+input[type=range] {
+  width: 100%; height: 4px; appearance: none; -webkit-appearance: none;
+  background: rgba(255,255,255,.15); border-radius: 2px; outline: none; cursor: pointer;
+  margin-bottom: var(--space-6);
+}
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none; width: 18px; height: 18px;
+  border-radius: 50%; background: #fff; cursor: pointer;
+  box-shadow: 0 2px 10px rgba(0,0,0,.35);
+}
+input[type=range]:focus-visible { outline: 2px solid var(--accent); border-radius: 2px; }
+.fee-bars-label {
+  font-size: 10px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase;
+  color: rgba(255,255,255,.3); margin-bottom: var(--space-3);
+}
+.fee-bars { display: flex; flex-direction: column; gap: var(--space-3); }
+.fee-bar-row { display: flex; align-items: center; gap: var(--space-3); }
+.fee-bar-track {
+  flex: 1; height: 52px; background: rgba(255,255,255,.08);
+  border-radius: var(--r-md); overflow: hidden;
+}
+.fee-bar-fill {
+  height: 100%; display: flex; align-items: center; padding: 0 var(--space-4);
+  border-radius: var(--r-md); transition: width .45s cubic-bezier(.4,0,.2,1);
+  min-width: 72px;
+}
+.fill-xf { background: rgba(255,255,255,.28); }
+.fill-sk { background: rgba(255,255,255,.16); }
+.fill-wi { background: rgba(255,255,255,.16); }
+.fee-bar-name { font-size: 14px; font-weight: 600; color: #fff; }
+.fee-bar-amt { font-size: 15px; font-weight: 700; color: rgba(255,255,255,.7); min-width: 48px; text-align: right; }
+
+/* Savings statement — inside card, darker section */
+.savings-statement {
+  margin: 0 calc(-1 * var(--space-6)) calc(-1 * var(--space-6));
+  padding: var(--space-5) var(--space-6);
+  background: rgba(0,0,0,.28);
+  border-top: 1px solid rgba(255,255,255,.08);
+  border-radius: 0 0 20px 20px;
+  margin-top: var(--space-6);
+}
+.savings-headline {
+  font-size: clamp(26px,3.5vw,38px); font-weight: 800; color: #fff;
+  letter-spacing: -1px; line-height: 1.1; margin-bottom: 4px;
+}
+.savings-subline { font-size: 13px; color: rgba(255,255,255,.45); line-height: 1.5; }
+
+/* Quick ref table */
+.qref-table { width: 100%; border-collapse: collapse; margin-top: var(--space-5); }
+.qref-table th {
+  font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: .06em;
+  color: rgba(255,255,255,.35); padding: 8px 10px; text-align: right; border-bottom: 1px solid rgba(255,255,255,.08);
+}
+.qref-table th:first-child { text-align: left; }
+.qref-table td { padding: 10px 10px; font-size: 13px; color: rgba(255,255,255,.65); text-align: right; border-bottom: 1px solid rgba(255,255,255,.05); }
+.qref-table td:first-child { text-align: left; font-weight: 500; color: rgba(255,255,255,.85); }
+.qref-table td.best { color: #A5B4FC; font-weight: 700; }
+.qref-table td.na { color: rgba(255,255,255,.25); font-style: italic; }
+.qref-table tr:last-child td { border-bottom: none; }
+.qref-note { font-size: 12px; color: rgba(255,255,255,.3); margin-top: var(--space-4); line-height: 1.6; }
+
+/* ─── PRICING AT A GLANCE — COMPARISON CARDS ─── */
+.pricing-section { background: var(--surface); }
+.pricing-cards {
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-4); align-items: stretch;
+}
+/* Base card */
+.pc {
+  background: var(--white); border-radius: var(--r-xl);
+  border: 1.5px solid var(--border);
+  overflow: hidden; display: flex; flex-direction: column;
+  transition: box-shadow .2s;
+}
+.pc:hover { box-shadow: var(--shadow-md); }
+.pc.pc-featured {
+  border-color: var(--ink);
+  box-shadow: 0 4px 24px rgba(18,20,29,.12);
+}
+/* Gradient header */
+.pc-header {
+  height: 110px; padding: var(--space-5);
+  display: flex; align-items: flex-start; justify-content: space-between;
+  position: relative;
+}
+.pc-skydo  .pc-header { background: linear-gradient(135deg, #EBF5FF 0%, #C8DFF8 100%); }
+.pc-xflow  .pc-header { background: linear-gradient(135deg, #1F2741 0%, #2D3C83 100%); }
+.pc-wise   .pc-header { background: linear-gradient(135deg, #E8F5EE 0%, #C1E6D3 100%); }
+/* Platform badge */
+.pc-badge {
+  font-size: 12px; font-weight: 700;
+  border-radius: var(--r-sm); padding: 5px 12px; display: inline-block;
+}
+.pc-skydo  .pc-badge { background: #2563EB; color: #fff; }
+.pc-xflow  .pc-badge { background: var(--accent); color: #fff; }
+.pc-wise   .pc-badge { background: #059669; color: #fff; }
+/* Currency chip */
+.pc-currency {
+  font-size: 11px; font-weight: 600; color: var(--muted);
+  background: rgba(255,255,255,.88); border: 1px solid rgba(255,255,255,.5);
+  backdrop-filter: blur(4px);
+  border-radius: var(--r-pill); padding: 4px 10px;
+  display: inline-flex; align-items: center; gap: 5px;
+}
+.pc-xflow .pc-currency { color: rgba(255,255,255,.6); background: rgba(255,255,255,.12); border-color: rgba(255,255,255,.2); }
+/* Body */
+.pc-body { padding: var(--space-6); flex: 1; display: flex; flex-direction: column; gap: 0; }
+.pc-ideal { font-size: 13px; color: var(--muted); margin-bottom: var(--space-2); }
+.pc-range {
+  font-size: 20px; font-weight: 700; color: var(--ink);
+  line-height: 1.2; letter-spacing: -.3px; margin-bottom: var(--space-5);
+}
+/* Limit note */
+.pc-limit {
+  padding: var(--space-3) var(--space-4);
+  border-radius: var(--r-sm); font-size: 12px;
+  font-style: italic; line-height: 1.5; margin-top: auto; margin-bottom: 0;
+}
+.pc-limit.warn { background: var(--amber-bg); border-left: 3px solid var(--amber); color: var(--amber); }
+.pc-limit.danger { background: var(--red-bg); border-left: 3px solid var(--red); color: var(--red); }
+.pc-limit.good  { background: var(--green-bg); border-left: 3px solid var(--green); color: var(--green); }
+/* Header extras */
+.pc-tagline { font-size: 11px; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; color: var(--muted); margin-top: 6px; }
+.pc-headline-fee { font-size: 22px; font-weight: 800; color: var(--ink); letter-spacing: -.5px; line-height: 1; text-align: right; align-self: flex-start; white-space: nowrap; }
+.pc-headline-fee span { font-size: 13px; font-weight: 500; color: var(--muted); }
+/* Feature rows */
+.pc-features { display: flex; flex-direction: column; gap: 0; margin-bottom: var(--space-4); flex: 1; }
+.pc-feat { display: flex; align-items: flex-start; gap: 10px; padding: 10px 0; border-bottom: 1px solid rgba(204,210,233,.4); }
+.pc-feat:last-child { border-bottom: none; }
+.pc-feat-icon { flex-shrink: 0; width: 18px; height: 18px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 10px; font-weight: 700; margin-top: 1px; }
+.pc-feat-icon.good { background: var(--green-bg); color: var(--green); }
+.pc-feat-icon.bad  { background: var(--red-bg);   color: var(--red); }
+.pc-feat-icon.warn { background: var(--amber-bg); color: var(--amber); }
+.pc-feat-text { font-size: 13px; color: var(--muted); line-height: 1.5; }
+.pc-feat-text strong { color: var(--ink); font-weight: 600; }
+@media (max-width: 768px) {
+  .pricing-cards { grid-template-columns: 1fr; }
+}
+
+/* ─── XFLOW DIFFERENCE — HEADING LEFT + CARDS RIGHT ─── */
+.diff-section { background: var(--surface); }
+.diff-layout {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: var(--space-16);
+  align-items: start;
+}
+/* Sticky heading column */
+.diff-heading-col { position: sticky; top: 88px; }
+.diff-heading-col .label { margin-bottom: var(--space-3); display: block; }
+.diff-heading-col .h2 { margin-bottom: var(--space-4); font-size: 28px; }
+.diff-heading-col .body-lg { color: var(--muted); font-size: 14px; line-height: 1.7; }
+/* Feature cards grid */
+.diff-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-4);
+}
+.diff-card {
+  background: var(--white); border-radius: var(--r-xl);
+  border: 1px solid var(--border); overflow: hidden;
+  display: flex; flex-direction: column;
+  transition: box-shadow .18s, transform .18s;
+}
+.diff-card:hover { box-shadow: var(--shadow-md); transform: translateY(-2px); }
+.diff-card-art {
+  height: 130px; display: flex; align-items: center; justify-content: center;
+  font-size: 42px; flex-shrink: 0; position: relative; overflow: hidden;
+}
+.diff-card:nth-child(1) .diff-card-art { background: linear-gradient(135deg, #EEF1FC 0%, #D5DCF6 100%); }
+.diff-card:nth-child(2) .diff-card-art { background: linear-gradient(135deg, #E6F4EE 0%, #C3E6D5 100%); }
+.diff-card:nth-child(3) .diff-card-art { background: linear-gradient(135deg, #EEF1FC 0%, #D5DCF6 100%); }
+.diff-card:nth-child(4) .diff-card-art { background: linear-gradient(135deg, #F0EEFB 0%, #D9D4F5 100%); }
+.diff-card:nth-child(5) .diff-card-art { background: linear-gradient(135deg, #EDF6FF 0%, #C9E2F9 100%); }
+.diff-card:nth-child(6) .diff-card-art { background: linear-gradient(135deg, #ECFDF5 0%, #A7F3D0 100%); }
+.diff-card:nth-child(7) .diff-card-art { background: linear-gradient(135deg, #FEF9EC 0%, #FDE68A 100%); }
+.diff-card:nth-child(8) .diff-card-art { background: linear-gradient(135deg, #EDF6FF 0%, #BFDBFE 100%); }
+.diff-card:nth-child(9) .diff-card-art { background: linear-gradient(135deg, #F0EEFB 0%, #C4B5FD 100%); }
+.diff-card-body { padding: var(--space-5); }
+.diff-card-badge {
+  display: inline-flex; align-items: center; gap: 4px;
+  font-size: 9px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase;
+  color: var(--accent); background: rgba(94,118,227,.1);
+  border-radius: var(--r-pill); padding: 2px 8px; margin-bottom: var(--space-2);
+}
+.diff-card-badge::before { content: '✦'; font-size: 7px; }
+.diff-card-title { font-size: 14px; font-weight: 700; color: var(--ink); line-height: 1.35; margin-bottom: 6px; }
+.diff-card-desc  { font-size: 12.5px; color: var(--muted); line-height: 1.6; }
+
+@media (max-width: 960px) {
+  .diff-layout { grid-template-columns: 1fr; }
+  .diff-heading-col { position: static; }
+  .diff-cards-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 600px) {
+  .diff-layout { gap: var(--space-10); }
+  .diff-cards-grid { grid-template-columns: 1fr; }
+}
+
+/* ─── WHO IS IT FOR ─── */
+.audience-section { background: var(--white); }
+.audience-layout {
+  display: grid; grid-template-columns: 260px 1fr; gap: var(--space-6); align-items: start;
+}
+/* Left tab list */
+.audience-tabs { display: flex; flex-direction: column; gap: 2px; }
+.audience-tab {
+  width: 100%; text-align: left; padding: 14px var(--space-5);
+  font-size: 15px; font-weight: 500; color: var(--muted);
+  background: none; border: none; border-left: 3px solid transparent;
+  border-radius: 0 var(--r-md) var(--r-md) 0;
+  cursor: pointer; font-family: var(--font); line-height: 1.3;
+  transition: color .15s, border-color .15s, background .15s;
+}
+.audience-tab:hover { background: var(--surface); color: var(--ink); }
+.audience-tab.active {
+  border-left-color: var(--accent); color: var(--ink);
+  font-weight: 600; background: var(--lavender);
+}
+/* Right content panel */
+.audience-panel { display: none; }
+.audience-panel.active { display: block; }
+.audience-card {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--r-xl); padding: var(--space-8);
+}
+.audience-badge {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: 10px; font-weight: 700; letter-spacing: .08em;
+  text-transform: uppercase; color: var(--accent);
+  background: #EEF2FF; border-radius: var(--r-pill);
+  padding: 4px 10px; margin-bottom: var(--space-5);
+}
+.audience-badge::before { content: '●'; font-size: 7px; }
+.audience-name { font-size: 22px; font-weight: 700; color: var(--ink); margin-bottom: var(--space-3); }
+.audience-desc { font-size: 14px; color: var(--muted); line-height: 1.7; margin-bottom: var(--space-6); max-width: 560px; }
+.pain-sol-grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-4); margin-bottom: var(--space-6); }
+.pain-list, .sol-list { display: flex; flex-direction: column; gap: var(--space-3); }
+.pain-item {
+  display: flex; gap: var(--space-3); font-size: 13px;
+  color: var(--muted); line-height: 1.5;
+  background: var(--red-bg); border-left: 3px solid var(--red);
+  border-radius: 0 var(--r-sm) var(--r-sm) 0; padding: var(--space-3) var(--space-4);
+}
+.pain-item::before { content: '✗'; color: var(--red); font-weight: 700; flex-shrink: 0; }
+.sol-item {
+  display: flex; gap: var(--space-3); font-size: 13px;
+  color: var(--muted); line-height: 1.5;
+  background: var(--green-bg); border-left: 3px solid var(--green);
+  border-radius: 0 var(--r-sm) var(--r-sm) 0; padding: var(--space-3) var(--space-4);
+}
+.sol-item::before { content: '✓'; color: var(--green); font-weight: 700; flex-shrink: 0; }
+.segments-label {
+  font-size: 10px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase;
+  color: var(--accent); margin-bottom: var(--space-3);
+}
+.segment-chips { display: flex; flex-wrap: wrap; gap: var(--space-2); }
+.segment-chip {
+  font-size: 12px; font-weight: 500; color: var(--muted);
+  background: var(--white); border: 1px solid var(--border);
+  border-radius: var(--r-pill); padding: 5px 12px;
+}
+@media (max-width: 860px) {
+  .audience-layout { grid-template-columns: 1fr; }
+  .audience-tabs { flex-direction: row; flex-wrap: wrap; border-left: none; border-bottom: 2px solid var(--border); }
+  .audience-tab { border-left: none; border-bottom: 3px solid transparent; border-radius: var(--r-md) var(--r-md) 0 0; }
+  .audience-tab.active { border-bottom-color: var(--accent); border-left-color: transparent; }
+  .pain-sol-grid { grid-template-columns: 1fr; }
+}
+
+/* ─── SOCIAL PROOF ─── */
+.proof-section { background: var(--white); }
+/* Heading with left bar */
+.proof-heading {
+  padding-left: var(--space-5);
+  border-left: 5px solid var(--ink);
+  margin-bottom: var(--space-10);
+}
+.proof-heading .label { display: block; margin-bottom: var(--space-3); }
+.proof-heading-line1 {
+  font-size: clamp(34px,4.5vw,56px); font-weight: 800;
+  color: var(--ink); line-height: 1.05; letter-spacing: -1.5px; display: block;
+}
+.proof-heading-line2 {
+  font-size: clamp(34px,4.5vw,56px); font-weight: 800;
+  color: var(--accent); line-height: 1.05; letter-spacing: -1.5px;
+  font-style: italic; display: block;
+}
+/* 3-col testimonial grid */
+.testi-grid {
+  display: grid; grid-template-columns: repeat(3,1fr);
+  gap: var(--space-4); margin-bottom: var(--space-12);
+}
+.testi-card {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--r-xl); padding: var(--space-8);
+  display: flex; flex-direction: column; gap: var(--space-5);
+}
+.testi-mark {
+  font-size: 56px; color: var(--border);
+  line-height: .8; font-family: Georgia, serif; select: none;
+  margin-bottom: calc(-1 * var(--space-2));
+}
+.testi-quote {
+  font-size: 15px; font-style: italic; font-weight: 300;
+  color: var(--ink); line-height: 1.75; flex: 1;
+}
+.testi-divider { height: 1px; background: var(--border); }
+.testi-footer { display: flex; align-items: center; gap: var(--space-3); }
+.testi-avatar {
+  width: 38px; height: 38px; border-radius: 50%; flex-shrink: 0;
+  background: var(--lavender); border: 1px solid var(--border);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 15px;
+}
+.testi-meta {}
+.testi-role {
+  font-size: 10px; font-weight: 700; letter-spacing: .07em;
+  text-transform: uppercase; color: var(--muted);
+}
+.testi-desc { font-size: 12px; color: var(--subtle); margin-top: 2px; }
+/* Trust row */
+.trust-row {
+  border-top: 1px solid var(--border); padding-top: var(--space-8);
+}
+.trust-label {
+  font-size: 10px; font-weight: 700; letter-spacing: .1em;
+  text-transform: uppercase; color: var(--subtle); margin-bottom: var(--space-5);
+}
+.trust-grid {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 0;
+}
+.trust-cell {
+  display: flex; align-items: center; gap: var(--space-3);
+  padding: var(--space-2) var(--space-6);
+  border-right: 1px solid var(--border);
+}
+.trust-cell:first-child { padding-left: 0; }
+.trust-cell:last-child  { border-right: none; }
+.trust-cell-icon { font-size: 16px; flex-shrink: 0; }
+.trust-cell-name {
+  font-size: 13px; font-weight: 600; color: var(--ink); white-space: nowrap;
+}
+.trust-cell-sub {
+  font-size: 11px; color: var(--subtle);
+  letter-spacing: .03em; white-space: nowrap;
+}
+.trust-cell-text { display: flex; flex-direction: column; gap: 1px; }
+@media (max-width: 900px) {
+  .testi-grid { grid-template-columns: 1fr 1fr; }
+  .trust-cell { padding: var(--space-2) var(--space-4); }
+}
+@media (max-width: 560px) {
+  .testi-grid { grid-template-columns: 1fr; }
+  .trust-grid { gap: var(--space-4); }
+  .trust-cell { border-right: none; padding-left: 0; }
+}
+
+/* ─── FAQ ─── */
+.faq-section { background: var(--surface); }
+.faq-list { display: flex; flex-direction: column; gap: var(--space-2); max-width: 720px; }
+.faq-item { background: var(--white); border: 1px solid var(--border); border-radius: var(--r-md); }
+.faq-btn {
+  width: 100%; display: flex; align-items: center; justify-content: space-between; gap: var(--space-4);
+  padding: 16px var(--space-5); background: none; border: none; cursor: pointer;
+  text-align: left; font-size: 15px; font-weight: 600; color: var(--ink); font-family: var(--font);
+  border-radius: var(--r-md);
+  transition: background .1s;
+}
+.faq-btn:hover { background: var(--surface); }
+.faq-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
+.faq-icon {
+  width: 22px; height: 22px; border-radius: 50%;
+  background: var(--lavender); color: var(--muted);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 14px; flex-shrink: 0; transition: background .2s, transform .2s;
+}
+.faq-item[open] .faq-icon { background: var(--ink); color: #fff; transform: rotate(45deg); }
+.faq-answer {
+  padding: 0 var(--space-5) var(--space-5); font-size: 14px; color: var(--muted); line-height: 1.7;
+}
+.faq-item:not([open]) .faq-answer { display: none; }
+
+/* ─── BOTTOM CTA ─── */
+.cta-section {
+  background: linear-gradient(135deg, #0E1428 0%, #1A2347 100%);
+  padding: var(--space-20) 0;
+}
+.cta-inner {
+  display: grid; grid-template-columns: 1fr auto;
+  gap: var(--space-16); align-items: center;
+}
+.cta-section .label { color: rgba(255,255,255,.35); display: block; margin-bottom: var(--space-3); }
+.cta-section .h2 { color: #fff; margin-bottom: var(--space-4); }
+.cta-section .cta-sub { font-size: 16px; color: rgba(255,255,255,.5); line-height: 1.7; max-width: 480px; }
+.cta-section .trust-row { border-top: none; padding-top: 0; }
+.cta-right { display: flex; flex-direction: column; align-items: flex-end; gap: var(--space-5); flex-shrink: 0; }
+@media (max-width: 768px) {
+  .cta-inner { grid-template-columns: 1fr; gap: var(--space-8); }
+  .cta-right { align-items: flex-start; }
+}
+.trust-row {
+  display: flex; justify-content: flex-start; flex-wrap: wrap; gap: var(--space-3);
+  margin-top: var(--space-5);
+}
+.trust-pill {
+  display: inline-flex; align-items: center; gap: 5px;
+  font-size: 12px; color: rgba(255,255,255,.5);
+  background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.1);
+  padding: 5px 12px; border-radius: var(--r-pill);
+}
+.trust-pill svg { width: 12px; height: 12px; flex-shrink: 0; }
+
+/* ─── FOOTER ─── */
+footer {
+  background: #080B15; padding: var(--space-8) 0;
+  border-top: 1px solid rgba(255,255,255,.06);
+}
+.footer-inner { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: var(--space-4); }
+.footer-text { font-size: 12px; color: rgba(255,255,255,.25); line-height: 1.6; }
+
+/* ─── RESPONSIVE ─── */
+@media (max-width: 900px) {
+  .hero-inner { grid-template-columns: 1fr; }
+  .calc-card { max-width: 440px; }
+  .fee-inner { grid-template-columns: 1fr; gap: var(--space-3); }
+  /* diff-bento handled above */
+}
+@media (max-width: 600px) {
+  /* diff-bento responsive handled above */
+  .proof-inner { grid-template-columns: 1fr; }
+  .nav-links { display: none; }
+}
+@media (max-width: 600px) {
+  .container { padding: 0 var(--space-5); }
+  .hero { padding: var(--space-10) 0; }
+  thead th { font-size: 11px; padding: 10px 10px; }
+  tbody td { padding: 12px 10px; font-size: 13px; }
+}
+
+/* ─── REDUCED MOTION ─── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+}
+</style>
+</head>
+<body>
+
+<!-- ═══ NAV ═══ -->
+<nav class="nav" role="navigation" aria-label="Main navigation">
+  <div class="container nav-inner">
+    <a href="https://xflowpay.com" class="nav-logo" aria-label="Xflow homepage">
+      <div class="nav-logo-icon" aria-hidden="true">X</div>
+      Xflow
+    </a>
+    <div class="nav-links" role="list">
+      <a href="#compare" role="listitem">Compare</a>
+      <a href="#calculator" role="listitem">Calculator</a>
+      <a href="#faq" role="listitem">FAQ</a>
+    </div>
+    <div class="nav-actions">
+      <a href="https://xflowpay.com/signup" class="btn btn-dark" role="button">Start Free</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ═══ HERO ═══ -->
+<header class="hero" role="banner">
+  <div class="container hero-inner">
+
+    <!-- Left: copy -->
+    <div>
+      <div class="hero-eyebrow">
+        <span class="live-dot" aria-hidden="true"></span>
+        2026 Full Comparison
+      </div>
+
+      <h1 class="h1">Skydo vs Wise —<br/>Full 2026 Comparison</h1>
+
+      <p class="hero-verdict">
+        Neither wins.<br/>
+        <strong>Xflow is the smarter choice</strong> for Indian businesses.
+      </p>
+
+      <div class="hero-ctas">
+        <a href="https://xflowpay.com/signup" class="btn btn-dark">Start Receiving Payments</a>
+        <a href="#compare" class="btn btn-outline">See Full Comparison</a>
+      </div>
+
+      <div class="hero-stats" role="list" aria-label="Key statistics">
+        <div role="listitem">
+          <span class="stat-num">0%</span>
+          <span class="stat-lbl">FX Markup</span>
+        </div>
+        <div role="listitem">
+          <span class="stat-num">0.6%</span>
+          <span class="stat-lbl">Flat fee, min $12</span>
+        </div>
+        <div role="listitem">
+          <span class="stat-num">1 day</span>
+          <span class="stat-lbl">INR settlement</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right: calculator -->
+    <div>
+      <div class="calc-card" role="region" aria-label="FX rate calculator">
+        <div class="calc-card-title">Calculate your savings</div>
+
+        <div class="calc-field-label" id="usd-label">USD Amount</div>
+        <div class="calc-field">
+          <span class="prefix" aria-hidden="true">$</span>
+          <input
+            type="number" id="calcInput" value="1000"
+            min="100" max="100000" step="100"
+            aria-labelledby="usd-label"
+            aria-describedby="calc-note"
+          />
+        </div>
+
+        <div class="rate-label" id="rate-list-label">FX Rate Comparison</div>
+        <ul class="rate-list" role="list" aria-labelledby="rate-list-label">
+          <li class="rate-item first" role="listitem">
+            <div class="rate-avatar avatar-x" aria-hidden="true">X</div>
+            <div class="rate-info">
+              <div class="rate-name">Xflow</div>
+              <div class="rate-sub">FX rate received</div>
+            </div>
+            <div class="rate-amount">
+              <div class="rate-inr" id="xf-inr">INR 92,946</div>
+              <div class="rate-rate" id="xf-rate">@ 92.9455</div>
+            </div>
+            <span class="rate-dir up" aria-label="Highest rate">↑</span>
+            <span class="winner-pill" aria-label="Best rate">Best</span>
+          </li>
+          <li class="rate-others-label" role="presentation">Others</li>
+          <li class="rate-item others" role="listitem">
+            <div class="rate-avatar avatar-sk" aria-hidden="true">Sk</div>
+            <div class="rate-info">
+              <div class="rate-name">Skydo</div>
+              <div class="rate-sub">FX rate received</div>
+            </div>
+            <div class="rate-amount">
+              <div class="rate-inr" id="sk-inr">INR 92,926</div>
+              <div class="rate-rate" id="sk-rate">@ 92.9262</div>
+            </div>
+            <span class="rate-dir down" aria-label="Lower rate">↓</span>
+          </li>
+          <li class="rate-item others" role="listitem">
+            <div class="rate-avatar avatar-w" aria-hidden="true">W</div>
+            <div class="rate-info">
+              <div class="rate-name">Wise</div>
+              <div class="rate-sub">FX rate received</div>
+            </div>
+            <div class="rate-amount">
+              <div class="rate-inr" id="wi-inr">INR 91,352</div>
+              <div class="rate-rate" id="wi-rate">@ 91.3523</div>
+            </div>
+            <span class="rate-dir down" aria-label="Lower rate">↓</span>
+          </li>
+          <li class="rate-item others" role="listitem">
+            <div class="rate-avatar avatar-b" aria-hidden="true">🏦</div>
+            <div class="rate-info">
+              <div class="rate-name">Banks</div>
+              <div class="rate-sub">FX rate received</div>
+            </div>
+            <div class="rate-amount">
+              <div class="rate-inr" id="bk-inr">INR 89,282</div>
+              <div class="rate-rate" id="bk-rate">@ 89.2822</div>
+            </div>
+            <span class="rate-dir down" aria-label="Lower rate">↓</span>
+          </li>
+        </ul>
+        <p class="calc-note" id="calc-note">Rates as of Mar 20, 2026. Xflow uses mid-market rate.</p>
+      </div>
+    </div>
+
+  </div>
+</header>
+
+<!-- ═══ PAIN POINTS ═══ -->
+<section class="pain-section" id="pain-points" aria-labelledby="pain-hd">
+  <div class="container">
+    <header class="section-hd">
+      <span class="label">What's quietly costing you money</span>
+      <h2 class="h2" id="pain-hd">Why businesses are switching</h2>
+      <p class="body-lg">The wrong payment platform drains your margins on every invoice.</p>
+    </header>
+
+    <div class="pain-row" role="list">
+
+      <article class="pain-card" role="listitem">
+        <div class="pain-icon">💸</div>
+        <div class="pain-title">Hidden FX Markups</div>
+        <p class="pain-body">Banks quietly add 1–3% on exchange rates. You only notice when comparing what you actually received vs. what you should have.</p>
+      </article>
+
+      <article class="pain-card" role="listitem">
+        <div class="pain-icon">🐢</div>
+        <div class="pain-title">Slow Settlements</div>
+        <p class="pain-body">SWIFT transfers take 3–5 business days, tying up working capital and making vendor payments hard to plan ahead.</p>
+      </article>
+
+      <article class="pain-card" role="listitem">
+        <div class="pain-icon">📋</div>
+        <div class="pain-title">FIRA / FIRC Friction</div>
+        <p class="pain-body">Chasing FIRA from banks wastes days. Wise charges extra per FIRA. Manual compliance creates audit risk for IT exporters.</p>
+      </article>
+
+      <article class="pain-card" role="listitem">
+        <div class="pain-icon">🚧</div>
+        <div class="pain-title">Invoice Limits</div>
+        <p class="pain-body">Wise caps at $10,000 per invoice — a hard blocker for IT companies billing large enterprise clients monthly.</p>
+      </article>
+
+      <article class="pain-card" role="listitem">
+        <div class="pain-icon">🎲</div>
+        <div class="pain-title">Unpredictable INR</div>
+        <p class="pain-body">You never know exactly how much lands in your account. Budgeting for projects and payroll becomes guesswork every cycle.</p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══ COMPARISON TABLE ═══ -->
+<section class="table-section section-gap" id="compare" aria-labelledby="compare-hd">
+  <div class="container">
+    <header class="section-hd">
+      <span class="label">Head-to-head</span>
+      <h2 class="h2" id="compare-hd">Skydo vs Wise vs Xflow — Complete Breakdown</h2>
+      <p class="body-lg" style="max-width:560px">Every feature that matters, side-by-side. No spin.</p>
+    </header>
+
+    <div class="table-scroll-wrap">
+      <div class="table-wrap">
+        <table role="table" aria-label="Feature comparison: Skydo, Wise, and Xflow">
+          <colgroup>
+            <col class="col-feat"/>
+            <col class="col-sk"/>
+            <col class="col-wi"/>
+            <col class="col-xf"/>
+          </colgroup>
+          <thead>
+            <tr>
+              <th scope="col">Feature</th>
+              <th scope="col">Skydo</th>
+              <th scope="col">Wise</th>
+              <th scope="col" class="col-xf">
+                Xflow
+                <span class="thead-meta">Recommended</span>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+
+            <!-- Platform summary — first row -->
+            <tr class="plat-summary-row">
+              <td>Overview</td>
+              <td>
+                <div class="ps-stars" aria-label="4 out of 5 stars">★★★★☆</div>
+                <div class="ps-headline">Strong for mid-range invoices</div>
+                <p class="ps-body">Flat-fee works well for $2K–$10K. Good India support. Struggles on large enterprise billing.</p>
+                <span class="ps-tag ps-warn">$29 flat hurts at scale</span>
+              </td>
+              <td>
+                <div class="ps-stars" aria-label="3 out of 5 stars">★★★☆☆</div>
+                <div class="ps-headline">Good for small transfers only</div>
+                <p class="ps-body">$10K cap and sole-proprietor-only restriction makes it unsuitable for growing Indian businesses.</p>
+                <span class="ps-tag ps-warn">$10K cap · Pvt Ltd not supported</span>
+              </td>
+              <td class="col-xf">
+                <div class="ps-stars" aria-label="5 out of 5 stars">★★★★★</div>
+                <div class="ps-headline">Best for Indian exporters</div>
+                <p class="ps-body">EEFC support, no limits, guaranteed FX rate, transfer pricing compliance, and platform API.</p>
+                <span class="ps-tag ps-good">Recommended for IT exporters</span>
+              </td>
+            </tr>
+
+            <!-- Category: Pricing -->
+            <tr class="cat-row">
+              <td colspan="3">Pricing</td>
+              <td class="col-xf-cat"></td>
+            </tr>
+            <tr>
+              <th scope="row">FX Markup</th>
+              <td><span class="c-y">✓</span> <span class="cell-text">0%</span></td>
+              <td><span class="c-y">✓</span> <span class="cell-text">0%</span></td>
+              <td class="col-xf"><span class="c-y">✓</span> <span class="cell-text">0% mid-market</span></td>
+            </tr>
+            <tr>
+              <th scope="row">Transaction Fee</th>
+              <td><span class="cell-text">$19 (≤$2K) / $29 ($2K–$10K)</span></td>
+              <td><span class="cell-text">1.6–1.9% + $2.50 / FIRA</span></td>
+              <td class="col-xf"><strong>0.6% flat, min $12</strong></td>
+            </tr>
+            <tr>
+              <th scope="row">Invoice Limit</th>
+              <td><span class="c-y">✓</span> <span class="cell-text">No limit</span></td>
+              <td><span class="c-n">✗</span> <span class="cell-text">Max $10,000</span></td>
+              <td class="col-xf"><span class="c-y">✓</span> <span class="cell-text">No limit</span></td>
+            </tr>
+
+            <!-- Category: Compliance -->
+            <tr class="cat-row">
+              <td colspan="3">Compliance &amp; Documentation</td>
+              <td class="col-xf-cat"></td>
+            </tr>
+            <tr>
+              <th scope="row">Free FIRA / eFIRC</th>
+              <td><span class="c-y">✓</span> <span class="cell-text">Free, instant</span></td>
+              <td><span class="c-n">✗</span> <span class="cell-text">$2.50 per transaction</span></td>
+              <td class="col-xf"><span class="c-y">✓</span> <span class="cell-text">Auto within 24 hrs</span></td>
+            </tr>
+            <tr>
+              <th scope="row">RBI / FEMA Compliance</th>
+              <td><span class="c-y">✓</span> <span class="cell-text">PA-CB licensed</span></td>
+              <td><span class="c-y">✓</span> <span class="cell-text">RBI regulated</span></td>
+              <td class="col-xf"><span class="c-y">✓</span> <span class="cell-text">RBI partner, eFIRA auto</span></td>
+            </tr>
+            <tr class="hidden-row" data-group="compliance">
+              <th scope="row">Transfer Pricing</th>
+              <td><span class="c-n">✗</span></td>
+              <td><span class="c-n">✗</span></td>
+              <td class="col-xf"><span class="c-y">✓</span> <span class="cell-text">Built-in for ITES &amp; funded startups</span></td>
+            </tr>
+
+            <!-- Category: Features -->
+            <tr class="cat-row">
+              <td colspan="3">Features</td>
+              <td class="col-xf-cat"></td>
+            </tr>
+            <tr>
+              <th scope="row">Guaranteed FX Rate</th>
+              <td><span class="c-n">✗</span></td>
+              <td><span class="c-n">✗</span></td>
+              <td class="col-xf"><span class="c-y">✓</span> <span class="cell-text">3-hour rate lock</span></td>
+            </tr>
+            <tr>
+              <th scope="row">EEFC Account</th>
+              <td><span class="c-n">✗</span></td>
+              <td><span class="c-n">✗</span></td>
+              <td class="col-xf"><span class="c-y">✓</span> <span class="cell-text">Hold &amp; convert on your terms</span></td>
+            </tr>
+            <tr>
+              <th scope="row">Settlement Speed</th>
+              <td><span class="cell-text">24–48 hrs</span></td>
+              <td><span class="cell-text">Same day–48 hrs</span></td>
+              <td class="col-xf"><span class="cell-text">1 business day</span></td>
+            </tr>
+            <tr class="hidden-row" data-group="features">
+              <th scope="row">Local Payment Rails</th>
+              <td><span class="c-p">~</span> <span class="cell-text">ACH via InstaLinks (2%)</span></td>
+              <td><span class="c-y">✓</span> <span class="cell-text">ACH, SEPA, Faster Payments</span></td>
+              <td class="col-xf"><span class="c-y">✓</span> <span class="cell-text">ACH, SEPA, CHAPS/BACS</span></td>
+            </tr>
+            <tr class="hidden-row" data-group="features">
+              <th scope="row">Currencies Supported</th>
+              <td><span class="cell-text">USD, EUR, GBP, AUD, CAD+</span></td>
+              <td><span class="cell-text">40+</span></td>
+              <td class="col-xf"><span class="cell-text">25+ incl. AED, SGD, HKD</span></td>
+            </tr>
+
+            <!-- Category: Business -->
+            <tr class="cat-row">
+              <td colspan="3">Business &amp; Support</td>
+              <td class="col-xf-cat"></td>
+            </tr>
+            <tr>
+              <th scope="row">Business Structures</th>
+              <td><span class="cell-text">Freelancers + registered</span></td>
+              <td><span class="c-n">✗</span> <span class="cell-text">Freelancers only</span></td>
+              <td class="col-xf"><span class="c-y">✓</span> <span class="cell-text">Pvt Ltd, LLP, OPC, freelancers</span></td>
+            </tr>
+            <tr>
+              <th scope="row">India-Based Support</th>
+              <td><span class="c-y">✓</span> <span class="cell-text">WhatsApp + email</span></td>
+              <td><span class="c-n">✗</span> <span class="cell-text">Global support only</span></td>
+              <td class="col-xf"><span class="c-y">✓</span> <span class="cell-text">Dedicated India team</span></td>
+            </tr>
+            <tr class="hidden-row" data-group="business">
+              <th scope="row">Zoho Books</th>
+              <td><span class="c-n">✗</span></td>
+              <td><span class="c-n">✗</span></td>
+              <td class="col-xf"><span class="c-y">✓</span> <span class="cell-text">Native integration</span></td>
+            </tr>
+            <tr class="hidden-row" data-group="business">
+              <th scope="row">White-Label API</th>
+              <td><span class="c-p">~</span> <span class="cell-text">Roadmap</span></td>
+              <td><span class="c-y">✓</span> <span class="cell-text">API available</span></td>
+              <td class="col-xf"><span class="c-y">✓</span> <span class="cell-text">Full API + webhooks</span></td>
+            </tr>
+            <tr class="hidden-row" data-group="business">
+              <th scope="row">Security</th>
+              <td><span class="cell-text">SOC 2, ISO 27001</span></td>
+              <td><span class="cell-text">FCA regulated (UK)</span></td>
+              <td class="col-xf"><span class="cell-text">ISO 27001 + SOC 2, JP Morgan</span></td>
+            </tr>
+
+            <!-- Show more -->
+            <tr class="show-more-row">
+              <td colspan="4">
+                <button class="show-more-btn" id="showMoreBtn" onclick="toggleRows()" aria-expanded="false">
+                  Show 8 more features ↓
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ PRICING AT A GLANCE ═══ -->
+<section class="pricing-section section-gap" id="pricing" aria-labelledby="pricing-hd">
+  <div class="container">
+    <header class="section-hd">
+      <span class="label">Transparent Pricing</span>
+      <h2 class="h2" id="pricing-hd">Skydo vs Wise vs Xflow — Pricing at a Glance</h2>
+      <p class="body-lg" style="max-width:580px">No hidden fees. No surprise deductions. Know exactly what you pay before you settle.</p>
+    </header>
+
+    <div class="pricing-cards">
+
+      <!-- ─ Skydo ─ -->
+      <div class="pc pc-skydo" aria-label="Skydo pricing">
+        <div class="pc-header">
+          <div>
+            <span class="pc-badge">Skydo</span>
+            <div class="pc-tagline">Flat-Tier Model</div>
+          </div>
+          <div class="pc-headline-fee">$19 <span>/txn</span></div>
+        </div>
+        <div class="pc-body">
+          <div class="pc-ideal">Flat-tier model — ideal for invoices between</div>
+          <div class="pc-range">USD 2,000 – USD 10,000</div>
+
+          <div class="pc-features">
+            <div class="pc-feat">
+              <span class="pc-feat-icon good">✓</span>
+              <span class="pc-feat-text"><strong>0% FX markup</strong> — live interbank rate</span>
+            </div>
+            <div class="pc-feat">
+              <span class="pc-feat-icon good">✓</span>
+              <span class="pc-feat-text"><strong>Free instant FIRA</strong> — included every transaction</span>
+            </div>
+            <div class="pc-feat">
+              <span class="pc-feat-icon good">✓</span>
+              <span class="pc-feat-text"><strong>No invoice limits</strong> — send any amount</span>
+            </div>
+            <div class="pc-feat">
+              <span class="pc-feat-icon good">✓</span>
+              <span class="pc-feat-text"><strong>India-based support</strong> via WhatsApp</span>
+            </div>
+            <div class="pc-feat">
+              <span class="pc-feat-icon warn">!</span>
+              <span class="pc-feat-text"><strong>No EEFC account</strong> — can't hold or convert forex strategically</span>
+            </div>
+            <div class="pc-feat">
+              <span class="pc-feat-icon warn">!</span>
+              <span class="pc-feat-text"><strong>No accounting integrations</strong> — manual reconciliation</span>
+            </div>
+          </div>
+
+          <div class="pc-limit warn">Flat fee is expensive on small invoices (&lt;$800) and less competitive than Xflow on invoices above $3,000.</div>
+        </div>
+      </div>
+
+      <!-- ─ Wise ─ -->
+      <div class="pc pc-wise" aria-label="Wise pricing">
+        <div class="pc-header">
+          <div>
+            <span class="pc-badge">Wise</span>
+            <div class="pc-tagline">Percentage-Based</div>
+          </div>
+          <div class="pc-headline-fee">1.7% <span>avg</span></div>
+        </div>
+        <div class="pc-body">
+          <div class="pc-ideal">Percentage-based — best for transfers under</div>
+          <div class="pc-range">USD 1,000 (freelancers only)</div>
+
+          <div class="pc-features">
+            <div class="pc-feat">
+              <span class="pc-feat-icon good">✓</span>
+              <span class="pc-feat-text"><strong>0% FX markup</strong> — mid-market rate</span>
+            </div>
+            <div class="pc-feat">
+              <span class="pc-feat-icon bad">✕</span>
+              <span class="pc-feat-text"><strong>$2.50 per FIRA</strong> — adds up quickly at volume</span>
+            </div>
+            <div class="pc-feat">
+              <span class="pc-feat-icon bad">✕</span>
+              <span class="pc-feat-text"><strong>$10,000 hard cap</strong> per invoice — no enterprise use</span>
+            </div>
+            <div class="pc-feat">
+              <span class="pc-feat-icon bad">✕</span>
+              <span class="pc-feat-text"><strong>Freelancers &amp; sole proprietors only</strong> — Pvt Ltd not supported</span>
+            </div>
+            <div class="pc-feat">
+              <span class="pc-feat-icon bad">✕</span>
+              <span class="pc-feat-text"><strong>No EEFC, no integrations</strong> — basic transfer tool only</span>
+            </div>
+            <div class="pc-feat">
+              <span class="pc-feat-icon warn">!</span>
+              <span class="pc-feat-text"><strong>Best for transfers under $1,000</strong> — fee becomes uncompetitive above that</span>
+            </div>
+          </div>
+
+          <div class="pc-limit danger">Not suitable for Pvt Ltd companies in India. Transaction limit makes it unusable for B2B enterprise work.</div>
+        </div>
+      </div>
+
+      <!-- ─ Xflow (featured) ─ -->
+      <div class="pc pc-xflow pc-featured" aria-label="Xflow pricing — recommended">
+        <div class="pc-header">
+          <div>
+            <span class="pc-badge">Xflow ✦ Recommended</span>
+            <div class="pc-tagline" style="color:rgba(255,255,255,.65)">Best Value for IT Exporters</div>
+          </div>
+          <div class="pc-headline-fee" style="color:#fff;">0.6% <span style="color:rgba(255,255,255,.55)">min $12</span></div>
+        </div>
+        <div class="pc-body">
+          <div class="pc-ideal">0.6% Flat, 0% FX Markup</div>
+          <div class="pc-range">0.6% Min $12 per transaction</div>
+
+          <div class="pc-features">
+            <div class="pc-feat">
+              <span class="pc-feat-icon good">✓</span>
+              <span class="pc-feat-text"><strong>0% FX markup</strong> — guaranteed within 3h</span>
+            </div>
+            <div class="pc-feat">
+              <span class="pc-feat-icon good">✓</span>
+              <span class="pc-feat-text"><strong>Free eFIRA within 24h</strong> — every time, no extra charge</span>
+            </div>
+            <div class="pc-feat">
+              <span class="pc-feat-icon good">✓</span>
+              <span class="pc-feat-text"><strong>No invoice limits</strong> — enterprise-ready at any scale</span>
+            </div>
+            <div class="pc-feat">
+              <span class="pc-feat-icon good">✓</span>
+              <span class="pc-feat-text"><strong>EEFC account</strong> — hold forex, convert strategically</span>
+            </div>
+            <div class="pc-feat">
+              <span class="pc-feat-icon good">✓</span>
+              <span class="pc-feat-text"><strong>Custom rates</strong> for $100K+ monthly volume</span>
+            </div>
+            <div class="pc-feat">
+              <span class="pc-feat-icon good">✓</span>
+              <span class="pc-feat-text"><strong>Native Zoho Books</strong> + white-label API</span>
+            </div>
+            <div class="pc-feat">
+              <span class="pc-feat-icon good">✓</span>
+              <span class="pc-feat-text"><strong>ISO 27001 + SOC 2 certified</strong> — enterprise-grade security</span>
+            </div>
+          </div>
+
+          <div class="pc-limit good">Best for IT/ITES exporters, SaaS, high-value invoices, platforms, developer integrations, and funded startups.</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FEE CALCULATOR ═══ -->
+<section class="fee-section section-gap" id="calculator" aria-labelledby="calc-hd">
+  <div class="container">
+    <header class="section-hd" style="margin-bottom:var(--space-10)">
+      <span class="label">Real cost comparison</span>
+      <h2 class="h2" id="calc-hd" style="color:#fff">Calculate your savings</h2>
+      <p style="font-size:16px;color:rgba(255,255,255,.5);margin-top:var(--space-3)">Drag to see exact fees on any invoice size.</p>
+    </header>
+
+    <div class="fee-inner">
+
+      <!-- Quick reference (LEFT) -->
+      <div class="fee-slider-card">
+        <div style="font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.07em;color:rgba(255,255,255,.35);margin-bottom:var(--space-4)">
+          Fee reference by invoice size
+        </div>
+        <table class="qref-table" aria-label="Fee reference by invoice size">
+          <thead>
+            <tr>
+              <th scope="col">Invoice</th>
+              <th scope="col">Skydo</th>
+              <th scope="col">Wise</th>
+              <th scope="col">Xflow</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>$500</td>   <td>$19</td>  <td>$11</td>              <td class="best">$12</td></tr>
+            <tr><td>$1,000</td> <td>$19</td>  <td>$19</td>              <td class="best">$12</td></tr>
+            <tr><td>$5,000</td> <td>$29</td>  <td>$87</td>              <td class="best">$30</td></tr>
+            <tr><td>$10,000</td><td>$29</td>  <td>$172</td>             <td class="best">$60</td></tr>
+            <tr><td>$25,000</td><td>$75</td>  <td class="na">Limit</td> <td class="best">$150</td></tr>
+            <tr><td>$50,000</td><td>$150</td> <td class="na">N/A</td>   <td class="best">$300</td></tr>
+          </tbody>
+        </table>
+        <p class="qref-note" style="margin-top:var(--space-4)">Wise has a $10,000 per-invoice limit for Indian accounts. Xflow minimum $12. Fees exclude GST.</p>
+      </div>
+
+      <!-- Slider card (RIGHT) -->
+      <div>
+        <div class="fee-slider-card" role="region" aria-label="Fee calculator">
+          <div class="fee-amount-row">
+            <span class="fee-amount-label">Invoice Amount</span>
+            <span class="fee-amount-val" id="rangeDisplay" aria-live="polite">USD 10,000</span>
+          </div>
+          <input type="range" id="feeRange" min="500" max="50000" value="10000" step="500"
+            aria-label="Invoice amount in USD" aria-valuemin="500" aria-valuemax="50000" aria-valuenow="10000"/>
+
+          <div class="fee-bars-label">Fees charged</div>
+          <div class="fee-bars" role="list" aria-label="Fee comparison">
+
+            <div class="fee-bar-row" role="listitem">
+              <div class="fee-bar-track" aria-hidden="true">
+                <div class="fee-bar-fill fill-xf" id="xf-bar" style="width:58%">
+                  <span class="fee-bar-name">Xflow</span>
+                </div>
+              </div>
+              <span class="fee-bar-amt" id="xf-fee">$100</span>
+            </div>
+
+            <div class="fee-bar-row" role="listitem">
+              <div class="fee-bar-track" aria-hidden="true">
+                <div class="fee-bar-fill fill-sk" id="sk-bar" style="width:17%">
+                  <span class="fee-bar-name">Skydo</span>
+                </div>
+              </div>
+              <span class="fee-bar-amt" id="sk-fee">$29</span>
+            </div>
+
+            <div class="fee-bar-row" role="listitem">
+              <div class="fee-bar-track" aria-hidden="true">
+                <div class="fee-bar-fill fill-wi" id="wi-bar" style="width:100%">
+                  <span class="fee-bar-name">Wise</span>
+                </div>
+              </div>
+              <span class="fee-bar-amt" id="wi-fee">$172</span>
+            </div>
+
+          </div>
+
+          <div class="savings-statement" role="status" aria-live="polite">
+            <div class="savings-headline" id="savingsNum">We are 42% cheaper</div>
+            <div class="savings-subline" id="savingsDesc">Xflow saves you $72 vs Wise on this invoice</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══ XFLOW DIFFERENCE ═══ -->
+<section class="diff-section section-gap" aria-labelledby="diff-hd">
+  <div class="container">
+    <div class="diff-layout">
+
+      <!-- LEFT: Sticky heading -->
+      <div class="diff-heading-col">
+        <span class="label">Only on Xflow</span>
+        <h2 class="h2" id="diff-hd">Built for India.<br>Engineered for Growth.</h2>
+        <p class="body-lg">9 capabilities Skydo and Wise don't offer — built for Indian exporters from day one.</p>
+      </div>
+
+      <!-- RIGHT: Feature cards -->
+      <div class="diff-cards-grid">
+
+        <div class="diff-card">
+          <div class="diff-card-art">🔒</div>
+          <div class="diff-card-body">
+            <span class="diff-card-badge">Unique to Xflow</span>
+            <div class="diff-card-title">Guaranteed Live FX Rate</div>
+            <p class="diff-card-desc">Rate locked for a 3-hour window after your client pays. Know exactly how many rupees land — before settlement.</p>
+          </div>
+        </div>
+
+        <div class="diff-card">
+          <div class="diff-card-art">🏦</div>
+          <div class="diff-card-body">
+            <span class="diff-card-badge">Unique to Xflow</span>
+            <div class="diff-card-title">EEFC Account Support</div>
+            <p class="diff-card-desc">Hold foreign currency and convert when rates favour you — no forced conversion on receipt.</p>
+          </div>
+        </div>
+
+        <div class="diff-card">
+          <div class="diff-card-art">🤖</div>
+          <div class="diff-card-body">
+            <span class="diff-card-badge">Unique to Xflow</span>
+            <div class="diff-card-title">FX AI Analyst</div>
+            <p class="diff-card-desc">AI-powered analyst helps you decide the optimal conversion window. Convert with data, not instinct.</p>
+          </div>
+        </div>
+
+        <div class="diff-card">
+          <div class="diff-card-art">📄</div>
+          <div class="diff-card-body">
+            <div class="diff-card-title">Instant eFIRA — Always Free</div>
+            <p class="diff-card-desc">Auto-generated within 24 hours of every payment. No fees, no follow-up calls, no bank delays. Ever.</p>
+          </div>
+        </div>
+
+        <div class="diff-card">
+          <div class="diff-card-art">🌐</div>
+          <div class="diff-card-body">
+            <div class="diff-card-title">Local Payment Rails</div>
+            <p class="diff-card-desc">Clients pay via ACH (US), SEPA (EU), or CHAPS/BACS (UK) as a domestic transfer — faster and cheaper for them.</p>
+          </div>
+        </div>
+
+        <div class="diff-card">
+          <div class="diff-card-art">📊</div>
+          <div class="diff-card-body">
+            <div class="diff-card-title">Native Zoho Books Integration</div>
+            <p class="diff-card-desc">Full reconciliation, no manual exports, no errors. Every payment syncs directly into your books the moment it settles.</p>
+          </div>
+        </div>
+
+        <div class="diff-card">
+          <div class="diff-card-art">⚖️</div>
+          <div class="diff-card-body">
+            <div class="diff-card-title">Transfer Pricing Compliance</div>
+            <p class="diff-card-desc">Built-in cross-border tax compliance for funded startups remitting from a global HQ to Indian subsidiaries.</p>
+          </div>
+        </div>
+
+        <div class="diff-card">
+          <div class="diff-card-art">🔌</div>
+          <div class="diff-card-body">
+            <div class="diff-card-title">White-Label API Platform</div>
+            <p class="diff-card-desc">Full REST API, webhooks, and programmatic vendor onboarding. Embed payments directly into your product.</p>
+          </div>
+        </div>
+
+        <div class="diff-card">
+          <div class="diff-card-art">🛡️</div>
+          <div class="diff-card-body">
+            <div class="diff-card-title">JP Morgan-Backed Infrastructure</div>
+            <p class="diff-card-desc">ISO 27001 + SOC 2 certified, zero limits on transfer size. Enterprise-grade security from day one.</p>
+          </div>
+        </div>
+
+      </div><!-- /diff-cards-grid -->
+    </div><!-- /diff-layout -->
+  </div>
+</section>
+
+<!-- ═══ WHO IS IT FOR ═══ -->
+<section class="audience-section section-gap" id="who-its-for" aria-labelledby="audience-hd">
+  <div class="container">
+    <header class="section-hd">
+      <span class="label">Who is Xflow built for?</span>
+      <h2 class="h2" id="audience-hd">The Right Fit for Every Indian Exporter</h2>
+      <p class="body-lg" style="max-width:580px">Xflow serves a wide spectrum of Indian businesses — with particular depth for ITES and high-value service exporters.</p>
+    </header>
+
+    <div class="audience-layout">
+
+      <!-- Left: tab nav -->
+      <nav class="audience-tabs" role="tablist" aria-label="Business type">
+        <button class="audience-tab active" role="tab" aria-selected="true"  aria-controls="panel-ites"       id="tab-ites">IT / ITES Exporters</button>
+        <button class="audience-tab"        role="tab" aria-selected="false" aria-controls="panel-saas"       id="tab-saas">SaaS &amp; Startups</button>
+        <button class="audience-tab"        role="tab" aria-selected="false" aria-controls="panel-freelance"  id="tab-freelance">Freelancers &amp; Agencies</button>
+        <button class="audience-tab"        role="tab" aria-selected="false" aria-controls="panel-platforms"  id="tab-platforms">Platforms &amp; Marketplaces</button>
+      </nav>
+
+      <!-- Right: content panels -->
+      <div>
+
+        <!-- IT / ITES -->
+        <div class="audience-panel active" id="panel-ites" role="tabpanel" aria-labelledby="tab-ites">
+          <div class="audience-card">
+            <span class="audience-badge">Primary Audience</span>
+            <div class="audience-name">IT / ITES Service Exporters</div>
+            <p class="audience-desc">India's IT/ITES sector generates $194B+ in annual export revenue. But slow, costly cross-border payments eat into every project's margin. Xflow solves this systematically.</p>
+            <div class="pain-sol-grid">
+              <div class="pain-list" aria-label="Pain points">
+                <div class="pain-item">Skydo's $29 flat fee gets expensive when billing multiple $5K–$10K invoices monthly</div>
+                <div class="pain-item">Wise's $10K per invoice limit is a hard blocker for enterprise project billing</div>
+                <div class="pain-item">Neither supports EEFC account settlement for strategic currency management</div>
+                <div class="pain-item">Transfer pricing compliance is manual and costly without the right infrastructure</div>
+                <div class="pain-item">Multiple FIRAs per project needed urgently for compliance audits</div>
+              </div>
+              <div class="sol-list" aria-label="Xflow solutions">
+                <div class="sol-item">1% flat fee — a $50,000 invoice costs $500. Wise literally cannot process it</div>
+                <div class="sol-item">No invoice limits — bill enterprise clients without splitting or workarounds</div>
+                <div class="sol-item">EEFC account: hold USD/GBP, convert when FX is in your favour</div>
+                <div class="sol-item">Transfer pricing compliance built-in — reduces CA and legal audit costs</div>
+                <div class="sol-item">Free eFIRA auto-issued within 24 hours — no bank follow-ups, ever</div>
+                <div class="sol-item">ISO + SOC 2 + JP Morgan-backed — enterprise clients approve Xflow without friction</div>
+              </div>
+            </div>
+            <div class="segments-label">Also perfect for these ITES segments</div>
+            <div class="segment-chips">
+              <span class="segment-chip">Software Dev</span>
+              <span class="segment-chip">Design Ops</span>
+              <span class="segment-chip">Data Science</span>
+              <span class="segment-chip">Legal Tech</span>
+              <span class="segment-chip">Cloud Infra</span>
+              <span class="segment-chip">Ad-Tech</span>
+              <span class="segment-chip">FinTech</span>
+              <span class="segment-chip">EduTech</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- SaaS & Startups -->
+        <div class="audience-panel" id="panel-saas" role="tabpanel" aria-labelledby="tab-saas">
+          <div class="audience-card">
+            <span class="audience-badge">Growing Segment</span>
+            <div class="audience-name">SaaS Platforms &amp; Startups</div>
+            <p class="audience-desc">Subscription billing and multi-country revenue streams demand predictable FX and API-level payment automation. Xflow's platform is built for exactly this.</p>
+            <div class="pain-sol-grid">
+              <div class="pain-list">
+                <div class="pain-item">Unpredictable FX on recurring USD subscriptions erodes MRR in INR terms</div>
+                <div class="pain-item">Manual reconciliation breaks down at scale across 50+ invoices monthly</div>
+                <div class="pain-item">Wise blocks Pvt Ltd entities — most funded startups can't use it at all</div>
+                <div class="pain-item">No API access on legacy platforms means zero automation</div>
+              </div>
+              <div class="sol-list">
+                <div class="sol-item">Guaranteed FX rate locked per invoice — know your INR revenue before conversion</div>
+                <div class="sol-item">Native Zoho Books integration — auto-reconcile every payment, zero manual work</div>
+                <div class="sol-item">Full Pvt Ltd + LLP support — no entity restrictions</div>
+                <div class="sol-item">White-label API + webhooks — embed payment flows directly into your product</div>
+              </div>
+            </div>
+            <div class="segments-label">Works great for</div>
+            <div class="segment-chips">
+              <span class="segment-chip">B2B SaaS</span>
+              <span class="segment-chip">Developer Tools</span>
+              <span class="segment-chip">API Businesses</span>
+              <span class="segment-chip">Funded Startups</span>
+              <span class="segment-chip">PLG Companies</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Freelancers & Agencies -->
+        <div class="audience-panel" id="panel-freelance" role="tabpanel" aria-labelledby="tab-freelance">
+          <div class="audience-card">
+            <span class="audience-badge">High Growth</span>
+            <div class="audience-name">Freelancers &amp; Digital Agencies</div>
+            <p class="audience-desc">Individual consultants and boutique agencies need fast, low-cost settlement with zero compliance headache. Xflow handles the paperwork so you focus on client work.</p>
+            <div class="pain-sol-grid">
+              <div class="pain-list">
+                <div class="pain-item">Bank TT transfers eat 2–4% of every payment in fees and FX spread</div>
+                <div class="pain-item">FIRA documentation is manual — chasing banks wastes billable hours</div>
+                <div class="pain-item">3–5 day settlement delays make cash flow management difficult</div>
+                <div class="pain-item">Wise's $10K cap limits large retainer payments</div>
+              </div>
+              <div class="sol-list">
+                <div class="sol-item">1% flat fee — keep 99% of every invoice, not 96–98%</div>
+                <div class="sol-item">Instant eFIRA delivered in 24 hours — compliance done automatically</div>
+                <div class="sol-item">Same-day or next-day INR settlement — no working capital crunch</div>
+                <div class="sol-item">No invoice cap — large project payments process in one transfer</div>
+              </div>
+            </div>
+            <div class="segments-label">Popular with</div>
+            <div class="segment-chips">
+              <span class="segment-chip">UX Designers</span>
+              <span class="segment-chip">Dev Agencies</span>
+              <span class="segment-chip">Content Studios</span>
+              <span class="segment-chip">Marketing Consultants</span>
+              <span class="segment-chip">Video Production</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Platforms & Marketplaces -->
+        <div class="audience-panel" id="panel-platforms" role="tabpanel" aria-labelledby="tab-platforms">
+          <div class="audience-card">
+            <span class="audience-badge">Enterprise Ready</span>
+            <div class="audience-name">Platforms &amp; Marketplaces</div>
+            <p class="audience-desc">Multi-sided platforms collecting payments from global clients and disbursing to Indian vendors need bank-grade infrastructure and full API control. Xflow delivers both.</p>
+            <div class="pain-sol-grid">
+              <div class="pain-list">
+                <div class="pain-item">Legacy payment providers lack API access for programmatic onboarding</div>
+                <div class="pain-item">High per-transaction fees kill unit economics at marketplace scale</div>
+                <div class="pain-item">Compliance and KYC for multiple vendors is a manual nightmare</div>
+                <div class="pain-item">No white-label option — users leave your platform to complete payments</div>
+              </div>
+              <div class="sol-list">
+                <div class="sol-item">Full REST API + webhooks — onboard vendors and process payments programmatically</div>
+                <div class="sol-item">1% flat fee scales cleanly — $1M in GMV costs $10,000, predictably</div>
+                <div class="sol-item">JP Morgan-backed infrastructure — enterprise procurement approves without friction</div>
+                <div class="sol-item">White-label embed — keep users inside your product throughout the payment flow</div>
+              </div>
+            </div>
+            <div class="segments-label">Built for</div>
+            <div class="segment-chips">
+              <span class="segment-chip">B2B Marketplaces</span>
+              <span class="segment-chip">Talent Platforms</span>
+              <span class="segment-chip">E-commerce Aggregators</span>
+              <span class="segment-chip">Gig Economy</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ SOCIAL PROOF ═══ -->
+<section class="proof-section section-gap" aria-labelledby="proof-hd">
+  <div class="container">
+
+    <!-- Heading with left bar -->
+    <header class="proof-heading">
+      <span class="label">From our customers</span>
+      <span class="proof-heading-line1" id="proof-hd">What Indian</span>
+      <span class="proof-heading-line2">businesses say</span>
+    </header>
+
+    <!-- 3 testimonial cards -->
+    <div class="testi-grid" role="list">
+
+      <article class="testi-card" role="listitem">
+        <div class="testi-mark" aria-hidden="true">"</div>
+        <p class="testi-quote">"With Xflow, we found a convenient, compliant, cost-effective way to bring funds into India under transfer pricing. No other platform in India could handle this for us at this scale."</p>
+        <div class="testi-divider"></div>
+        <div class="testi-footer">
+          <div class="testi-avatar" aria-hidden="true">👤</div>
+          <div class="testi-meta">
+            <div class="testi-role">Funded Startup CFO</div>
+            <div class="testi-desc">Global HQ → India Remittances</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="testi-card" role="listitem">
+        <div class="testi-mark" aria-hidden="true">"</div>
+        <p class="testi-quote">"Xflow's team understands India-specific compliance at a depth that global platforms simply don't. Our audit team finally stopped worrying about FIRAs."</p>
+        <div class="testi-divider"></div>
+        <div class="testi-footer">
+          <div class="testi-avatar" aria-hidden="true">🏦</div>
+          <div class="testi-meta">
+            <div class="testi-role">Neobank Partner</div>
+            <div class="testi-desc">Cross-border Payments</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="testi-card" role="listitem">
+        <div class="testi-mark" aria-hidden="true">"</div>
+        <p class="testi-quote">"Switched from Wise after hitting the $10K cap on a client invoice. Xflow processed a $45,000 payment in one shot — eFIRA arrived in my inbox the same evening."</p>
+        <div class="testi-divider"></div>
+        <div class="testi-footer">
+          <div class="testi-avatar" aria-hidden="true">💼</div>
+          <div class="testi-meta">
+            <div class="testi-role">IT Services Founder</div>
+            <div class="testi-desc">Bangalore · Enterprise Billing</div>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- Trust & endorsements -->
+    <div class="trust-row">
+      <div class="trust-label">Trust &amp; Endorsements</div>
+      <div class="trust-grid" role="list">
+        <div class="trust-cell" role="listitem">
+          <div class="trust-cell-icon">🏢</div>
+          <div class="trust-cell-text">
+            <span class="trust-cell-name">WeWork India</span>
+            <span class="trust-cell-sub">Client</span>
+          </div>
+        </div>
+        <div class="trust-cell" role="listitem">
+          <div class="trust-cell-icon">📊</div>
+          <div class="trust-cell-text">
+            <span class="trust-cell-name">ZOHO Partners</span>
+            <span class="trust-cell-sub">Partners</span>
+          </div>
+        </div>
+        <div class="trust-cell" role="listitem">
+          <div class="trust-cell-icon">🏛️</div>
+          <div class="trust-cell-text">
+            <span class="trust-cell-name">JP Morgan</span>
+            <span class="trust-cell-sub">Infrastructure</span>
+          </div>
+        </div>
+        <div class="trust-cell" role="listitem">
+          <div class="trust-cell-icon">🛡️</div>
+          <div class="trust-cell-text">
+            <span class="trust-cell-name">RBI Authorised</span>
+            <span class="trust-cell-sub">Regulated</span>
+          </div>
+        </div>
+        <div class="trust-cell" role="listitem">
+          <div class="trust-cell-icon">✅</div>
+          <div class="trust-cell-text">
+            <span class="trust-cell-name">ISO 27001 · SOC 2</span>
+            <span class="trust-cell-sub">Certified</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══ FAQ ═══ -->
+<section class="faq-section section-gap" id="faq" aria-labelledby="faq-hd">
+  <div class="container">
+    <header class="section-hd">
+      <span class="label">Common questions</span>
+      <h2 class="h2" id="faq-hd">FAQ</h2>
+    </header>
+
+    <div class="faq-list" role="list">
+
+      <details class="faq-item" role="listitem">
+        <summary class="faq-btn">
+          Is Xflow cheaper than Skydo for large invoices?
+          <div class="faq-icon" aria-hidden="true">+</div>
+        </summary>
+        <div class="faq-answer">Xflow charges 0.6% flat (min $12) on any invoice size. For a $10K invoice, Xflow costs $60 vs Skydo's $29 — but Skydo doesn't include free FIRA (Wise charges $2.50 per FIRA), and Wise charges $172 for the same $10K invoice. At $25K+, Wise's $10K cap makes it unusable entirely. Xflow has no limits.</div>
+      </details>
+
+      <details class="faq-item" role="listitem">
+        <summary class="faq-btn">
+          Why can't I use Wise for my Pvt Ltd company?
+          <div class="faq-icon" aria-hidden="true">+</div>
+        </summary>
+        <div class="faq-answer">Wise's Indian business accounts only support freelancers and sole proprietors — registered entities like Pvt Ltd, LLP, or OPC are not supported. Xflow supports all Indian business structures.</div>
+      </details>
+
+      <details class="faq-item" role="listitem">
+        <summary class="faq-btn">
+          What is an EEFC account and does Xflow support it?
+          <div class="faq-icon" aria-hidden="true">+</div>
+        </summary>
+        <div class="faq-answer">An EEFC (Exchange Earners' Foreign Currency) account lets you hold foreign currency and convert when rates are most favourable. Xflow supports EEFC natively. Neither Skydo nor Wise offer this — you're forced to convert immediately at whatever rate is available on receipt.</div>
+      </details>
+
+      <details class="faq-item" role="listitem">
+        <summary class="faq-btn">
+          How does Xflow handle FIRA / eFIRC compliance?
+          <div class="faq-icon" aria-hidden="true">+</div>
+        </summary>
+        <div class="faq-answer">Xflow auto-generates eFIRA within 24 hours of receipt — always free. Skydo also provides FIRA free. Wise charges $2.50 per FIRA, which adds up significantly for frequent exporters.</div>
+      </details>
+
+      <details class="faq-item" role="listitem">
+        <summary class="faq-btn">
+          Is Xflow safe and RBI regulated?
+          <div class="faq-icon" aria-hidden="true">+</div>
+        </summary>
+        <div class="faq-answer">Yes. Xflow is an RBI-authorised payment aggregator using JP Morgan as its banking infrastructure partner. The platform is ISO 27001 + SOC 2 certified with no limits on transfer size.</div>
+      </details>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══ BOTTOM CTA ═══ -->
+<section class="cta-section" aria-labelledby="cta-hd">
+  <div class="container">
+    <div class="cta-inner">
+
+      <!-- Left: headline content -->
+      <div>
+        <span class="label">Start in minutes — free</span>
+        <h2 class="h2" id="cta-hd">Stop Overpaying.<br/>Start Receiving More.</h2>
+        <p class="cta-sub" style="margin-top:var(--space-4)">Join thousands of Indian IT exporters, SaaS companies, and freelancers who've switched to Xflow.</p>
+        <div class="trust-row" role="list" aria-label="Trust signals" style="margin-top:var(--space-6)">
+          <span class="trust-pill" role="listitem">
+            <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M10 3L5 8.5 2 5.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            No setup fees
+          </span>
+          <span class="trust-pill" role="listitem">
+            <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M10 3L5 8.5 2 5.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            0% FX markup
+          </span>
+          <span class="trust-pill" role="listitem">
+            <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M10 3L5 8.5 2 5.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Free eFIRA
+          </span>
+          <span class="trust-pill" role="listitem">
+            <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M10 3L5 8.5 2 5.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            1-day INR settlement
+          </span>
+          <span class="trust-pill" role="listitem">
+            <svg viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M10 3L5 8.5 2 5.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            RBI &amp; ISO compliant
+          </span>
+        </div>
+      </div>
+
+      <!-- Right: CTA -->
+      <div class="cta-right">
+        <a href="https://xflowpay.com/signup" class="btn btn-light" style="font-size:16px;padding:16px 32px;white-space:nowrap;">
+          Create Your Free Account →
+        </a>
+        <p style="font-size:12px;color:rgba(255,255,255,.3);text-align:right;line-height:1.6;">
+          No credit card required<br/>Live in under 5 minutes
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FOOTER ═══ -->
+<footer role="contentinfo">
+  <div class="container footer-inner">
+    <p class="footer-text">© 2026 Xflow. RBI-authorised payment aggregator.<br/>Rates indicative as of Mar 20, 2026. Comparison data from publicly available pricing pages.</p>
+    <a href="https://xflowpay.com" style="font-size:12px;color:rgba(255,255,255,.25);text-decoration:none;">xflowpay.com</a>
+  </div>
+</footer>
+
+<script>
+"use strict";
+
+/* ── Hero FX Calculator ── */
+const RATES = { xf: 92.9455, sk: 92.9262, wi: 91.3523, bk: 89.2822 };
+
+function fmtINR(n) {
+  return 'INR\u00A0' + Math.round(n).toLocaleString('en-IN');
+}
+
+const calcInput = document.getElementById('calcInput');
+function updateHeroCalc() {
+  const usd = Math.max(100, parseFloat(calcInput.value) || 1000);
+  document.getElementById('xf-inr').textContent = fmtINR(usd * RATES.xf);
+  document.getElementById('sk-inr').textContent = fmtINR(usd * RATES.sk);
+  document.getElementById('wi-inr').textContent = fmtINR(usd * RATES.wi);
+  document.getElementById('bk-inr').textContent = fmtINR(usd * RATES.bk);
+}
+calcInput.addEventListener('input', updateHeroCalc);
+
+/* ── Fee Slider ── */
+function xfFee(usd)  { return Math.max(usd * 0.006, 12); }
+function skFee(usd)  { return usd <= 2000 ? 19 : usd <= 10000 ? 29 : usd * 0.003; }
+function wiFee(usd)  { return usd > 10000 ? null : +(usd * 0.017 + 2.5).toFixed(2); }
+
+const feeRange = document.getElementById('feeRange');
+
+function updateFee() {
+  const usd = parseInt(feeRange.value, 10);
+  feeRange.setAttribute('aria-valuenow', usd);
+  document.getElementById('rangeDisplay').textContent = 'USD ' + usd.toLocaleString();
+
+  const xf = xfFee(usd);
+  const sk = skFee(usd);
+  const wi = wiFee(usd);
+
+  document.getElementById('xf-fee').textContent = '$' + Math.round(xf);
+  document.getElementById('sk-fee').textContent = '$' + Math.round(sk);
+  document.getElementById('wi-fee').textContent = wi !== null ? '$' + Math.round(wi) : 'Over limit';
+
+  const max = Math.max(xf, sk, wi ?? 0, 1);
+  document.getElementById('xf-bar').style.width = (xf / max * 100) + '%';
+  document.getElementById('sk-bar').style.width = (sk / max * 100) + '%';
+  document.getElementById('wi-bar').style.width = ((wi ?? max) / max * 100) + '%';
+
+  const savEl = document.getElementById('savingsNum');
+  const descEl = document.getElementById('savingsDesc');
+  if (wi !== null) {
+    const saved = Math.round(wi - xf);
+    const pct   = Math.round(saved / wi * 100);
+    savEl.textContent  = 'We are ' + pct + '% cheaper';
+    descEl.textContent = 'Xflow saves you $' + saved + ' vs Wise on this invoice';
+  } else {
+    const skSaved = Math.round(sk - xf);
+    const skPct   = Math.round(skSaved / sk * 100);
+    savEl.textContent  = skPct > 0 ? 'We are ' + skPct + '% cheaper' : 'No invoice cap — ever';
+    descEl.textContent = 'Wise\'s $10K limit exceeded. Xflow has no cap.';
+  }
+}
+feeRange.addEventListener('input', updateFee);
+updateFee();
+
+/* ── Show / Hide extra table rows ── */
+let expanded = false;
+function toggleRows() {
+  expanded = !expanded;
+  document.querySelectorAll('.hidden-row').forEach(r => {
+    r.classList.toggle('visible', expanded);
+  });
+  const btn = document.getElementById('showMoreBtn');
+  btn.setAttribute('aria-expanded', expanded);
+  btn.textContent = expanded ? 'Show fewer features ↑' : 'Show 8 more features ↓';
+}
+
+/* ── Audience tabs ── */
+document.querySelectorAll('.audience-tab').forEach(tab => {
+  tab.addEventListener('click', () => {
+    document.querySelectorAll('.audience-tab').forEach(t => {
+      t.classList.remove('active');
+      t.setAttribute('aria-selected', 'false');
+    });
+    document.querySelectorAll('.audience-panel').forEach(p => p.classList.remove('active'));
+    tab.classList.add('active');
+    tab.setAttribute('aria-selected', 'true');
+    document.getElementById(tab.getAttribute('aria-controls')).classList.add('active');
+  });
+});
+
+/* ── FAQ details polyfill for older iOS ── */
+// Native <details> is widely supported; no JS needed.
+// Just add the rotation on toggle for the icon:
+document.querySelectorAll('.faq-item').forEach(item => {
+  item.addEventListener('toggle', () => {
+    const icon = item.querySelector('.faq-icon');
+    if (icon) icon.textContent = item.open ? '×' : '+';
+  });
+});
+</script>
+</body>
+</html>
